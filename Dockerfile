@@ -88,4 +88,6 @@ echo -e "MAKEOPTS=\"-j1\"" > /etc/portage/env/onejob.conf && \
 \
 echo -e "sci-libs/rocFFT onejob.conf" > /etc/portage/package.env/rocm
 
-#RUN emerge amd-rocm-meta
+RUN ebuild /var/db/repos/rocm/sci-libs/rocALUTION/rocALUTION-3.0.0.ebuild manifest --force
+
+RUN emerge amd-rocm-meta
