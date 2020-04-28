@@ -60,6 +60,8 @@ virtual/opencl ~amd64\n\
 dev-python/CppHeaderParser ~amd64\n\
 dev-util/roctracer ~amd64" > /etc/portage/package.accept_keywords/rocm && \
 \
+echo -e ">sys-libs/glibc-2.29-r7" > /etc/portage/package.mask/glibc && \
+\
 echo -e ">dev-libs/rocm-opencl-runtime-3.0.0\n\
 >dev-libs/rocm-device-libs-3.0.0\n\
 >dev-libs/rocm-opencl-driver-3.0.0\n\
