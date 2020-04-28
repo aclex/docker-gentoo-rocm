@@ -55,6 +55,8 @@ dev-libs/half ~amd64\n\
 sci-libs/miopen ~amd64\n\
 dev-libs/rccl ~amd64\n\
 \n\
+virtual/opencl ~amd64\n\
+\n\
 dev-python/CppHeaderParser ~amd64\n\
 dev-util/roctracer ~amd64" > /etc/portage/package.accept_keywords/rocm && \
 \
