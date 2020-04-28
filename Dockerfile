@@ -88,8 +88,7 @@ dev-libs/rccl -gfx803 gfx906" > /etc/portage/package.use/rocm && \
 echo -e "media-libs/libglvnd X" > /etc/portage/package.use/libglvnd && \
 echo -e "MAKEOPTS=\"-j1\"" > /etc/portage/env/onejob.conf && \
 \
-echo -e "sci-libs/rocFFT onejob.conf" > /etc/portage/package.env/rocm
-
-RUN ebuild /var/db/repos/rocm/sci-libs/rocALUTION/rocALUTION-3.0.0.ebuild manifest --force
+echo -e "sci-libs/rocFFT onejob.conf\n\
+sci-libs/rocBLAS onejob.conf" > /etc/portage/package.env/rocm
 
 RUN emerge amd-rocm-meta
